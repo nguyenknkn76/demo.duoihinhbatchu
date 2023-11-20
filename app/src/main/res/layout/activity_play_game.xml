@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cardview_dark_background"
+    tools:context=".PlayGameActivity">
+    
+    <RelativeLayout
+        android:background="#00ff00"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/txvUserMoney"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="@drawable/bg_money"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:minWidth="100dp"
+            android:text="10"
+            android:textColor="#000"
+            android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="#00ff00"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/txvMan"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="@drawable/bg_money"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:minWidth="100dp"
+            android:text="10"
+            android:textColor="#000"
+            android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+
+    <!-- view player's answer   -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/questImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:minHeight="100dp">
+        <GridView
+            android:id="@+id/gdvResult"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center">
+        </GridView>
+    </RelativeLayout>
+
+    <!-- player choose answer    -->
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <GridView
+            android:id="@+id/gdvPlayerResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="60dp">
+        </GridView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+
+            android:layout_alignParentBottom="true">
+            <Button
+                android:onClick="suggest"
+                android:layout_marginRight="3dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:background="@drawable/bg_money"
+                android:layout_width="1dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Goi y"
+                android:textColor="#000" />
+
+            <Button
+                android:onClick="changeQuest"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:background="@drawable/bg_money"
+                android:layout_width="1dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Doi cau hoi"
+                android:textColor="#000" />
+        </LinearLayout>
+    </RelativeLayout>
+    
+
+</LinearLayout>
